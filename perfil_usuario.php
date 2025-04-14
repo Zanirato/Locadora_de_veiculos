@@ -12,7 +12,7 @@
     <!-- Link dos ícones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title> ADM - Locadora de veículos</title>
+    <title> USUÁRIO - Locadora de veículos</title>
 </head>
 <body class="container py-4">
     <div class="container py-4">
@@ -88,6 +88,8 @@
                                 <th>Modelo</th>
                                 <th>Placa</th>
                                 <th>Status</th>
+                                <th>Outros</th>
+                                <th>Ações</th>
                             </thead>
                             <tbody>
                                 <tr>
@@ -97,13 +99,147 @@
                                     <td>
                                         <span class="badge bg-success"> Disponível ✅</span>
                                     </td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informacoes">Mais informações</button>
+                                        <div class="modal fade" id="informacoes">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Mais informações sobre o veículo</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>Especificações:</h6>
+                                                        <br>
+                                                        <p>Combustível:	Álcool E Gasolina</p>
+                                                        <p>Velocidade Máxima(km/h):	157 Km/H</p>
+                                                        <p>Potência (cv): 75</p>
+                                                        <p>Tração: dianteira</p>
+                                                        <p>Cor: Preto</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button class="btn btn-primary">Salvar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-info" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">Alugue</button>
+                                        <div class="modal fade" id="contatoModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Alugue o Veiculo:</h5>
+                                                        <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="nome" class="form-label">Nome:</label>
+                                                                <input type="text" class="form-control" id="nome" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                            <label for="cpfContato" class="form-label">CPF:</label>
+                                                            <input type="text" class="form-control" id="cpfContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="emailContato" class="form-label">Email</label>
+                                                                <input type="email" class="form-control" id="emailContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="inputPassword5" class="form-label">Senha:</label>
+                                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="diasAluguel" class="form-label">Dias de aluguel:</label>
+                                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="submit" class="btn btn-info">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Moto</td>
-                                    <td>Honda</td>
+                                    <td>Honda ADV</td>
                                     <td>BAC1D80</td>
                                     <td>
                                         <span class="badge bg-success"> Disponível ✅</span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informacoes2">Mais informações</button>
+                                        <div class="modal fade" id="informacoes2">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Mais informações sobre o veículo</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>Especificações:</h6>
+                                                        <br>
+                                                        <p>Combustível:	Gasolina</p>
+                                                        <p>Torque Máximo: 38 kgf.m a 6.500 rpm</p>
+                                                        <p>Potência Máxima: 13,2 cv a 8.500 rpm</p>
+                                                        <p>Tipo de Motor: 4 tempo</p>
+                                                        <p>Cor: Vermelha</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button class="btn btn-primary">Salvar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-info" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">Alugue</button>
+                                        <div class="modal fade" id="contatoModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Alugue o Veiculo:</h5>
+                                                        <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="nome" class="form-label">Nome:</label>
+                                                                <input type="text" class="form-control" id="nome" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                            <label for="cpfContato" class="form-label">CPF:</label>
+                                                            <input type="text" class="form-control" id="cpfContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="emailContato" class="form-label">Email</label>
+                                                                <input type="email" class="form-control" id="emailContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="inputPassword5" class="form-label">Senha:</label>
+                                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="diasAluguel" class="form-label">Dias de aluguel:</label>
+                                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="submit" class="btn btn-info">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -113,13 +249,147 @@
                                     <td>
                                         <span class="badge bg-danger"> Indisponível ❌</span>
                                     </td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informacoes3">Mais informações</button>
+                                        <div class="modal fade" id="informacoes3">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Mais informações sobre o veículo</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>Especificações:</h6>
+                                                        <br>
+                                                        <p>Combustível:	Etanol e gasolina</p>
+                                                        <p>Velocidade Máxima(km/h):	187 Km/H</p>
+                                                        <p>Potência (cv): 78 cv</p>
+                                                        <p>Tração: dianteira</p>
+                                                        <p>Cor: Prata</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button class="btn btn-primary">Salvar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-info" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">Alugue</button>
+                                        <div class="modal fade" id="contatoModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Alugue o Veiculo:</h5>
+                                                        <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="nome" class="form-label">Nome:</label>
+                                                                <input type="text" class="form-control" id="nome" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                            <label for="cpfContato" class="form-label">CPF:</label>
+                                                            <input type="text" class="form-control" id="cpfContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="emailContato" class="form-label">Email</label>
+                                                                <input type="email" class="form-control" id="emailContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="inputPassword5" class="form-label">Senha:</label>
+                                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="diasAluguel" class="form-label">Dias de aluguel:</label>
+                                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="submit" class="btn btn-info">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Moto</td>
-                                    <td>Yamaha</td>
+                                    <td>Yamaha MT-03</td>
                                     <td>LGE2E03</td>
                                     <td>
                                         <span class="badge bg-danger"> Indisponível ❌</span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#informacoes4">Mais informações</button>
+                                        <div class="modal fade" id="informacoes4">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Mais informações sobre o veículo</h4>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h6>Especificações:</h6>
+                                                        <br>
+                                                        <p>Combustível: Gasolina</p>
+                                                        <p>Velocidade Máxima(km/h):	180 km/h</p>
+                                                        <p>Potência (cv): 41,3 cv</p>
+                                                        <p>Torque: 3,0 kgf.m (9.000 rpm)</p>
+                                                        <p>Cor: Preto</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button class="btn btn-primary">Salvar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-info" data-bs-toggle="modal" class="nav-link active" data-bs-target="#contatoModal">Alugue</button>
+                                        <div class="modal fade" id="contatoModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Alugue o Veiculo:</h5>
+                                                        <button type="button" class="btn-close"  data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="mb-3">
+                                                                <label for="nome" class="form-label">Nome:</label>
+                                                                <input type="text" class="form-control" id="nome" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                            <label for="cpfContato" class="form-label">CPF:</label>
+                                                            <input type="text" class="form-control" id="cpfContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="emailContato" class="form-label">Email</label>
+                                                                <input type="email" class="form-control" id="emailContato" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="inputPassword5" class="form-label">Senha:</label>
+                                                                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="diasAluguel" class="form-label">Dias de aluguel:</label>
+                                                                <input type="number" name="dias" class="form-control days-input" value="1" min="1" required>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                        <button type="submit" class="btn btn-info">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -130,5 +400,23 @@
         </div>
     </div>
 </div>
+
+<script>
+    (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    })()
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

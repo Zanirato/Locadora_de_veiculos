@@ -28,6 +28,7 @@
     text-align: center;
 }
 
+
 @media (max-width: 768px){
     .action-wrapper{
         flex-direction: column;
