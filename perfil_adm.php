@@ -139,7 +139,12 @@
                                         <span class="badge bg-success"> DIsponível ✅</span>
                                     </td>
                                     <td> 
-                                        <div class="action-wrapper"></div>
+                                        <div class="action-wrapper">
+                                            <form action="post" class="btn-group-actions">
+                                                <!-- Botão deletar(apenas para adm) -->
+                                                <button class="btn btn-danger btn-sm" type="submit" name="deletar"> Deletar </button>
+                                            </form>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
