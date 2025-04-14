@@ -104,20 +104,31 @@
                             </label>
                             <input type="number" name="dias_calculo" class="form-control" value="1" required>
                         </div>
+<<<<<<< HEAD
                         <button class="btn btn-success w-100" type="submit" name="calcular"> Calcular previsão </button>
+=======
+                        <buuton class="btn btn-success w-100" type="submit" name="calcular">Calcular</buuton>
+>>>>>>> f5c81cf8405e98b00d106a67b1dd07889cdbfefc
                     </form>
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
     <!-- Tabela  de veiculos cadastrados -->
+=======
+>>>>>>> f5c81cf8405e98b00d106a67b1dd07889cdbfefc
     <div class="row mt-4">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
                     <h4 class="mb-0">
+<<<<<<< HEAD
                         Veículos cadastrados🗒️
+=======
+                        Veículos cadastrados
+>>>>>>> f5c81cf8405e98b00d106a67b1dd07889cdbfefc
                     </h4>
                 </div>
                 <div class="card-body">
@@ -136,6 +147,7 @@
                                     <td>Uno</td>
                                     <td>ABC1D34</td>
                                     <td>
+<<<<<<< HEAD
                                         <span class="badge bg-success"> DIsponível ✅</span>
                                     </td>
                                     <td> 
@@ -144,6 +156,15 @@
                                                 <!-- Botão deletar(apenas para adm) -->
                                                 <button class="btn btn-danger btn-sm" type="submit" name="deletar"> Deletar </button>
                                             </form>
+=======
+                                        <span class="badge bg-success">
+                                            Disponível👍
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="action-wrapper">
+                                            
+>>>>>>> f5c81cf8405e98b00d106a67b1dd07889cdbfefc
                                         </div>
                                     </td>
                                 </tr>
