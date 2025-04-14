@@ -143,6 +143,17 @@
                                             <form action="post" class="btn-group-actions">
                                                 <!-- Botão deletar(apenas para adm) -->
                                                 <button class="btn btn-danger btn-sm" type="submit" name="deletar"> Deletar </button>
+
+                                                <!-- Botões condicionais -->
+                                                <div class="rent-group">
+
+                                                <!-- Veiculo alugado -->
+                                                    <button class="btn btn-warning btn-sm" type="submit" name="devolver"> Devolver </button>
+
+                                                    <!-- Veículodisponível -->
+                                                    <input type="number" name="dias" class="form-control" value="1" min="1" required>
+                                                    <button class="btn btn-primary" name="alugar" type="submit"> Alugar </button>
+                                                </div>
                                             </form>
                                         </div>
                                     </td>
