@@ -4,7 +4,7 @@ Criação de sistema de locação de veículos, com a página de admistrador - q
 
 
 
-#### Página de Admin
+### Página de Admin
 
 Página de Administrador, que contém uma parte paa cadastro de novos veículos - motos e carros - e uma parte para calcular a previsão de aluguel, ou seja, o cálculo aproximado do preço  de acordo com a quantidade de dias de aluguel. Por fim, uma tabela com todos os veículos cadastrados, com botões para excluir, alugar e devolver veículos.
 
@@ -12,7 +12,7 @@ Página de Administrador, que contém uma parte paa cadastro de novos veículos 
 
 
 
-#### Página de Usuário 
+### Página de Usuário 
 
 Página de usuários, que contém parte de cálculo previsto, assim como o do admin, e a tabela de veículos, com especificação do tipo, modelo, placa e o status do veículo.
 
@@ -20,7 +20,7 @@ Página de usuários, que contém parte de cálculo previsto, assim como o do ad
 
 
 
-#### Página de Login
+### Página de Login
 
 Página de login, para entrar na página principal. É necessário a senha e o nome do usuário para entrar.
 
