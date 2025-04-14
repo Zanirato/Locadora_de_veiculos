@@ -1,0 +1,13 @@
+.action-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+btn-group-actions{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
